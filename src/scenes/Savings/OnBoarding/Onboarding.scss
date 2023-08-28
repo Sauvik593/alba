@@ -1,0 +1,481 @@
+.MuiDialog-container {
+  .MuiPaper-root {
+    max-width: 885px;
+    .MuiDialogTitle-root {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #adb8f9;
+      padding: 10px 20px 10px 24px;
+      font-family: "Merriweather";
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 700;
+      color: #221c35;
+      .MuiIconButton-root {
+        padding: 2px;
+        background-color: #fff;
+        margin-left: 10px;
+        .MuiSvgIcon-root {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+    .MuiDialogContent-root {
+      padding-bottom: 0 !important;
+      #scrollable-content {
+        min-height: 400px;
+        max-height: 500px;
+        overflow: scroll;
+        margin: 0 40px;
+        padding: 20px;
+        padding-bottom: 0;
+        background: #f3f3f3;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style: none;
+          margin: 16px 0;
+        }
+      }
+    }
+    .MuiDialogActions-root {
+      height: 90px;
+      background-color: #211c32;
+      padding-right: 42px;
+      button {
+        width: 180px;
+        height: 35px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        &:disabled {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+.MuiStepper-horizontal {
+  margin-left: -10%;
+  margin-right: -10%;
+  &.expired {
+    opacity: 0.4;
+    .MuiStepConnector-line {
+      border-color: #221c35;
+    }
+    .QontoStepIcon-circle {
+      background-color: #221c35;
+    }
+  }
+  .MuiStep-horizontal:first-child {
+    .MuiStepLabel-label {
+      text-align: left;
+      margin-left: 45%;
+    }
+  }
+  .MuiStep-horizontal:last-child {
+    .MuiStepLabel-label {
+      text-align: right;
+      margin-right: 45%;
+    }
+  }
+  .MuiStepLabel-label {
+    font-family: "Work Sans" !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 21px !important;
+    color: #221c35;
+    .Mui-active {
+      color: #221c35 !important;
+    }
+  }
+}
+.MuiMenu-paper {
+  transform: translateY(1px) !important;
+  background: #ffffff;
+  border: 1px solid #f4f4f4;
+  border-radius: 0 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05) !important;
+  .MuiMenu-list {
+    padding: 4px 0 !important;
+  }
+}
+.savings-content {
+  background: #e4f4f3;
+  padding-top: 30px;
+  min-height: 550px;
+  .application-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    background: #211c32;
+    padding: 15px 5px 15px 48px;
+    .MuiTypography-root {
+      font-family: "Merriweather";
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      color: #ffffff;
+    }
+    .icons {
+      img {
+        margin-right: 30px;
+      }
+    }
+  }
+  .savings-details {
+    padding: 0 62px;
+    @media (max-width: 768px) {
+      padding: 0 15px;
+    }
+    ul {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      color: #221c35;
+      padding-left: 18px;
+      margin-bottom: -16px;
+      li {
+        margin: 16px 0;
+      }
+    }
+    a {
+      color: #0073c7 !important;
+      cursor: pointer;
+      text-decoration: underline !important;
+    }
+    .recaptcha {
+      margin-top: 35px;
+    }
+    .error {
+      label,
+      span,
+      p {
+        color: #eb0000 !important;
+      }
+      .msg {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 8px;
+        margin-bottom: 0;
+      }
+      .input {
+        border: 1px solid #eb0000;
+        background-color: #fdf7f8;
+      }
+    }
+    .inputErrorOTP {
+      label {
+        color: #eb0000 !important;
+      }
+      input {
+        border: 1px solid #eb0000;
+      }
+    }
+    .inputError {
+      label,
+      span,
+      p {
+        color: #eb0000 !important;
+      }
+      div {
+        border: 1px solid #eb0000;
+        background-color: #fff;
+      }
+    }
+
+    .nominated-account {
+      a:not(.btn) {
+        color: #0073c7;
+      }
+      ul {
+        line-height: 28px !important;
+        font-size: 20px !important;
+        list-style: none; /* Remove default bullets */
+      }
+      ul li::before {
+        content: "\25CF";
+        color: #221c35;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+    .title {
+      font-family: "Merriweather";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 26px;
+      color: #221c35;
+      margin: 43px -5px 24px;
+    }
+
+    .label {
+      font-style: normal;
+      font-weight: 500 !important;
+      font-size: 18px !important;
+      line-height: 24px !important;
+      color: #221c35 !important;
+      margin-top: 26px;
+    }
+
+    .privacy-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      color: #221c35;
+      margin-top: 10px;
+      margin-bottom: 36px;
+      max-width: 1200px;
+    }
+
+    .checkbox {
+      display: flex !important;
+      margin-bottom: 20px;
+      .MuiTypography-root {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #221c35;
+      }
+    }
+
+    .radio {
+      font-size: 18px;
+      line-height: 24px;
+      color: #221c35;
+      margin-right: 40px !important;
+      margin-top: 14px;
+    }
+
+    .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+      height: 0.5em !important;
+    }
+    .css-v7mwc-MuiInputBase-root-MuiOutlinedInput-root {
+      border-radius: 0 !important;
+    }
+    .custom-btn {
+      max-width: 900px;
+      button {
+        width: 242px;
+        height: 52px;
+        font-style: normal;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+        line-height: 24px !important;
+        text-transform: uppercase !important;
+        .MuiButton-startIcon {
+          margin-left: -50px;
+          margin-right: 50px;
+        }
+        .MuiButton-endIcon {
+          margin-left: 70px;
+          margin-right: -70px;
+        }
+      }
+    }
+
+    .input {
+      margin-top: 11px !important;
+    }
+    .otpInput {
+      input:focus-visible {
+        outline: 1px auto #00e2d6;
+      }
+    }
+    .input .MuiSelect-select {
+      padding: 0 !important;
+    }
+
+    .info {
+      display: flex;
+      background: #adb8f9;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 18px;
+      color: #221c35;
+      padding: 9px;
+      max-width: 1100px;
+      img {
+        margin-right: 7px;
+      }
+    }
+
+    #personal-details {
+      .find-address {
+        display: flex;
+        align-items: flex-end;
+        button {
+          width: 100%;
+          height: 40px;
+          font-style: normal;
+          font-weight: 500 !important;
+          font-size: 14px !important;
+          line-height: 24px !important;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    #summary {
+      margin-top: 40px;
+      & > .MuiGrid-container {
+        margin-bottom: 55px;
+      }
+      .summary-card {
+        background-color: #f8f8f8;
+        border: 1px solid rgba(34, 28, 53, 0.05);
+        padding: 36px 23px 32px;
+        .title {
+          margin: 0;
+        }
+        .subtitle {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 24px;
+          color: #221c35;
+          margin: 4px 0 -5px;
+        }
+        .MuiGrid-container {
+          margin-top: 20px;
+        }
+        .field-name {
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 300;
+          color: #737373;
+        }
+        .field-value {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 500;
+          color: #221c35;
+        }
+      }
+      .label {
+        margin-bottom: 5px;
+      }
+      .info {
+        margin-bottom: 14px;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.5);
+        max-width: 1150px;
+        margin-bottom: 24px;
+      }
+      .marketing-preference {
+        .checkbox {
+          margin-bottom: 0;
+          margin-right: 44px;
+          .MuiTypography-root {
+            font-weight: 300;
+          }
+        }
+      }
+      .pdf-box {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 27px;
+        margin-right: 55px;
+        cursor: pointer;
+        .MuiTypography-root {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 24px;
+          text-decoration-line: underline;
+          color: #0073c7;
+        }
+      }
+      .divider {
+        border: 1px dashed #221c35;
+        margin: 40px 0;
+      }
+    }
+
+    #your-application {
+      padding-bottom: 60px;
+      ul {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        line-height: 26px;
+      }
+    }
+
+    #session-expiry {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title {
+        line-height: 32px;
+        margin: 58px 0 24px;
+      }
+      .description {
+        max-width: 800px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 45px 0 60px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.otp-group {
+  display: flex;
+  width: 100%;
+  max-width: 360px;
+  column-gap: 10px;
+}
+.nominated-account {
+  direction: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.otp-input {
+  width: 55px;
+  height: 55px;
+  border: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #221c35;
+}
+.error-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 885px;
+  padding: 94px 0 142px;
+  .oops {
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #221c35;
+  }
+  button {
+    width: 332px;
+    height: 35px;
+    margin-top: 20px;
+  }
+}
