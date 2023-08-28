@@ -15,7 +15,7 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Node.js code
       - rm -rf node_modules && npm cache clean --force
-      - npm run build:prod
+      - npm run build
   post_build:
     commands:
       - echo Build completed on `date`
