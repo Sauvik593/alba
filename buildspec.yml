@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 12
+      nodejs: 18.x
     commands:
       - echo Installing Mocha...
       - npm install
@@ -14,6 +14,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
+      - rm -rf node_modules && npm cache clean --force
       - npm run build:prod
   post_build:
     commands:
